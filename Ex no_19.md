@@ -1,41 +1,40 @@
-# EX 19 C program to perform basic left and right shift operations on a given integer and display the result.
+# EX 19C program to perform the basic left and right shift operation.  
 ## DATE:
 ## AIM:
-To write a C program to perform basic left and right shift operations on a given integer and display the result.
+To write a C program to perform the basic left and right shift operation.  
 
 ## Algorithm
-1.Start.
 
-2.Define the required variable.
+1.Start the program and read an integer value a from the user.
 
-3.Write program to find frequency of a character.
+2.Perform the left shift operation using c = a << 2.
 
-4.Read the value using scanf.
+3.Perform the right shift operation using d = a >> 2.
 
-5.Ask the user to make an input.
+4.Display the results of both left shift and right shift operations.
 
-6.Print out the answer.
-
-7.End  
+5.Stop the program.
 
 ## Program:
 ```
-#include<stdio.h> 
-#include<string.h> 
+#include<stdio.h>
 int main()
 {
-int i,count=0,len;
-char str[100],val[100]; 
-scanf("%s %s",str,val); 
-len=strlen(str); 
-for(i=0;i<len;i++){
-if(str[i]==val[0]) 
-count++;
-}printf("%d",count);}
+    int a;
+    scanf("%d",&a);
+    int c=a<<2;
+    int d=a>>2;
+    printf("After Left Shift Operation value of a is:%d\n",c);
+    printf("After Right Shift Operation value of a is:%d\n",d);
+    return 0;
+    
+}
 ```
 
 ## Output:
-<img width="278" height="296" alt="image" src="https://github.com/user-attachments/assets/7211cb57-c673-456d-b642-57b9fe525aae" />
+
+<img width="679" height="164" alt="Screenshot 2026-03-19 142827" src="https://github.com/user-attachments/assets/60586c32-134c-4c3d-8516-30d406d0016c" />
+
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
