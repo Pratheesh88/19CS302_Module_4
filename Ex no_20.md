@@ -20,25 +20,23 @@ To write a C program to convert the given string to lowercase without using stri
 int main() {
     char str[1000];
     int i = 0;
-
-    printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
 
     while(str[i] != '\0') {
         if(str[i] >= 'A' && str[i] <= 'Z') {
-            str[i] = str[i] + 32;  // Convert uppercase to lowercase
+            str[i] = str[i] + 32; 
         }
         i++;
     }
 
-    printf("Lowercase string: %s", str);
+    printf("%s", str);
 
     return 0;
 }
 ```
 
 ## Output:
-<img width="384" height="161" alt="image" src="https://github.com/user-attachments/assets/135dbb9f-f0d9-424a-b370-b1d591e53bae" />
+<img width="797" height="167" alt="image" src="https://github.com/user-attachments/assets/4cd3724a-e7cc-4f2b-a507-c3e15bebe0e0" />
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
