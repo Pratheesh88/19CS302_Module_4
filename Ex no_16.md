@@ -4,35 +4,30 @@
 To write a C program to find minimum between three fraction numbers using conditional operator.
 
 ## Algorithm
-1.Start the program.
-
-2.Read three fractional (float) numbers from the user.
-
-3.Use conditional operators to compare the first two numbers, then compare the result with the third.
-
-4.Store the minimum value in a variable.
-
-5.Display the minimum and end the program. 
+1. Start.
+2. Define a variables a,b,c,min.
+3. Write program to find minimum numbers.
+4. Read the value using scanf. 
+5. Ask the user to make an input.
+6. Print out the answer.
+7. End.  
 
 ## Program:
-```#include <stdio.h>
-
+```
+#include <stdio.h>
 int main() {
-    float a, b, c, min;
-
-    printf("Enter three fractional numbers: ");
-    scanf("%f%f%f", &a, &b, &c);
-
-    min = (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
-
-    printf("Minimum value: %.2f\n", min);
-
-    return 0;
+float a, b, c, min;
+scanf("%f%f%f", &a, &b, &c);
+min = (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
+printf("Minimum between %.3f, %.3f and %.3f = %.3f\n",a,b,c, min);
+return 0;
 }
 ```
 
 ## Output:
-<img width="499" height="177" alt="image" src="https://github.com/user-attachments/assets/6bd655da-728c-4446-8865-c6081f8fb6be" />
+
+<img width="1151" height="220" alt="image" src="https://github.com/user-attachments/assets/27fd7695-7ab7-4f1b-a518-a59981501ff0" />
+
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
